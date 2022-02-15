@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list {overflow: hidden; width: 800px; font-size: small; border: 1px solid #777; margin: 100px auto; }
+        .list .pic {float: left;}
+        .right {float: right; height: 100%; width: 50%; border: 1px solid #777;}
+        .right .top {padding-bottom: 50px;}
+        .bottom {overflow: hidden; border: 1px solid #777; box-sizing: border-box; }
+        .bottom .p1 {float: left;}
+        .bottom .p2 {float: right;}
+
+    </style>
+
+</head>
+<body>
+
+    <div class="list">
+        <div class="pic">
+            이미지영역
+        </div>
+
+        <div class="right"> <!-- 오른쪽영역 -->
+            <div class="top"> <!-- 위상자 -->
+                <p>제목 : 패딩바텀 50px;</p>
+                <p>내용 : 내용영역</p>
+            </div>
+            <div class="bottom"> <!-- 아래상자 -->
+                <p class="p1">가격</p>
+                <p class="p2">10000원</p>
+            </div>
+            <div class="bottom-button">
+                <button>장바구니</button>
+                <button>구매하기</button>
+            </div>
+            
+        </div>
+
+       
+    </div>
+    
+</body>
+</html>
