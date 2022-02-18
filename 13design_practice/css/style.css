@@ -9,6 +9,7 @@
 .custom-header .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    border: none;
 }
 
 .custom-header .navbar-inverse {
@@ -31,3 +32,152 @@
 .custom-header .navbar-brand {
     padding: 10px 20px;
 }
+
+
+/* footer 스타일 */
+footer {
+    background-color: #282A35;
+    margin-top: 50px;
+}
+
+footer .copyright {
+    color: #fff;
+    padding:  30px 0; /* 위아래 좌우 */
+}
+
+footer address {
+    margin: 0;
+}
+
+footer .footer-menu {
+    overflow: hidden;
+    padding:  30px 0; /* 위아래 좌우 */
+
+}
+
+footer .footer-menu .copyright-menu {
+    float: right;
+}
+
+footer .footer-menu .copyright-menu li {
+    display: inline-block;
+    padding:  0 5px; /* 위아래 좌우 */
+
+}
+
+footer .footer-menu .copyright-menu li a {
+    color: #fff;
+}
+
+
+/* 슬라이드 영역 */
+.slide-list {
+    padding: 0;
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0) 100%);
+}
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0) 100%);
+}
+
+
+/* section영역 */
+.prod-list, .prod-link {
+    border: 1px solid #777;
+    display: block;
+    text-align: center;
+}
+
+.prod-list, .prod-inner { /* col클래스들은 패딩좌우 15px을 가지고 있음 */
+    padding: 5px;
+
+}
+
+.prod-link > img {
+    max-width: none;
+}
+
+.prod-link {
+    position: relative;
+}
+
+.prod-link .arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ccc;
+    color: #fff;
+    position: absolute; /* 상자를 기반으로 띄움 */
+    left: 15px;
+    bottom: 15px;
+    opacity: 1; /* 투명도 1 - 불투명 , 0 - 투명 */
+}
+
+.prod-link .hover {
+    width: 100px;
+    background-color: #4285f4;
+    opacity: 0; /* 투명하게 설정해서 안보이게 */
+}
+
+/* a호버시 윤곽 */
+.prod-link:hover {border: 1px solid #4285f4;}
+
+/* a호버시 하위에 .arrow를 숨김, .hover를 보임 */
+.prod-link:hover > .arrow {opacity: 0;}
+.prod-link:hover > .hover {opacity: 1;}
+
+/* 블로그 스타일 */
+/* 임시적으로 사이즈 변경 */
+@media(min-width:1200px) {
+    .blog > .col-lg-2 {
+        width: 20%;
+    }
+}
+
+.blog_inner {
+    border: 1px solid #777;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.blog_content {
+    padding: 15px 12px;
+}
+
+.blog_img {text-align: center;}
+
+.blog_content > p {
+    font-size: 13px;
+    font-weight: bolder;
+    height: 60px;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.blog_info {overflow: hidden;}
+.blog_info .stars {float: left;}
+.blog_info .stars i {display: inline; color: gold;}
+.blog_info strong {float: right; font-weight: bolder;}
+
+
+.blog_hover_content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.8); 
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 20px;
+}
+.blog_hover_content:hover a {color: #fff;}
+
+.blog_inner:hover > .blog_hover_content {
+    opacity: 1;
+}
+
+

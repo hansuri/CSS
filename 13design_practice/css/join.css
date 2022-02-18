@@ -1,0 +1,10 @@
+.form-join {
+    margin: 0 auto;
+    float: none;
+}
+
+.form-join form {
+    box-shadow: 0px 8px 16px rgb(0, 0, 0, 0.3);
+    /* col클래스가 float를 가지고 있기 때문에 float를 먼저 없애고 가운데 정렬 */
+    padding: 30px 20px;
+}

@@ -1,0 +1,108 @@
+.row {
+    overflow: hidden; 
+    padding: 15px;
+}
+
+.row img {float: left; margin-right: 110px;}
+.row .detail_info {
+    float: right; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+.detail_info .title {font-size: 25px;}
+.detail_info .price {
+    font-size: 30px; 
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.detail_info .delivery {font-size: 12px; font-weight: 300; color: #999;}
+
+
+/* 버튼영역 */
+.detail_price, .detail_button {overflow: hidden; }
+.detail_price .detail_price_left{float: left;}
+.detail_price .detail_price_right{float: right; font-size: 20px; font-weight: bolder;}
+.detail_price p {
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.detail_button button {
+    width: 50%;
+    padding: 15px 10px;
+   box-sizing: border-box;
+}
+/* .detail_button .detail_button_bag {
+    float: left;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 20px 100px;
+    background-color: #fff;
+    font-size: 18px;
+}
+.detail_button .detail_button_buy {
+    float: left;
+    border: 0;
+    padding: 20px 100px;
+    background-color: rgb(66, 122, 187);
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid  rgb(66, 122, 187);
+
+}
+*/
+
+
+
+
+/* 댓글영역 */
+.reply_wrap {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    position: relative;
+    padding: 10px;
+}
+.reply_img {
+    position: absolute;
+    left: 10;
+    top: 10px;
+}
+.reply_content {
+    padding-left: 50px;
+}
+.reply_content textarea {
+    /* form-control은 부트스트랩 클래스 */
+    resize: vertical;/* 수직이동만 가능 */
+    height: 100px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.reply_content textarea:focus {
+    height: 250px;
+}
+
+.reply_control {overflow: hidden;}
+.reply_input {
+    float: left;
+}
+
+.reply_input input {
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.reply_control button {float: right;}
+
+
+/* 글 아래영역 */
+.reply_group {
+    overflow: hidden;
+}
+.reply_group > a {
+    float: right;
+    color: #777;
+}
+.reply_content > p {
+    margin: o;
+}
